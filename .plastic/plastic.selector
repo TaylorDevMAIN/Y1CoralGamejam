@@ -1,0 +1,4 @@
+repository "Y1CoralGamejam 2025-06-11_14-14-20/Y1CoralGamejam@1374923020088@cloud"
+  path "/"
+    br "/main"
+    co "/main"
