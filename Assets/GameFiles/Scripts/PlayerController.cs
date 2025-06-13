@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
     {
         float mouseX = Input.GetAxis("Mouse X");
         this.transform.Rotate(Vector3.up * mouseX);
+    } else {
+        //Player is swimming, requires diffrent controls
     }
     }
 }
