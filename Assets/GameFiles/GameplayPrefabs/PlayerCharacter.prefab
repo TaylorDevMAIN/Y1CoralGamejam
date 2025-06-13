@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 7333679924458779338}
   - component: {fileID: 5122480935578941365}
   - component: {fileID: 1817667147847551211}
+  - component: {fileID: 8530337373894417717}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -246,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc075106a450784f930b414e407a220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkspeed: 16
+  defaultspeed: 10
   isTouchingWater: 0
 --- !u!143 &7333679924458779338
 CharacterController:
@@ -323,3 +324,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &8530337373894417717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6053267429578780014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b767d6c5ee11474681a41cb86047a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key1: 0
