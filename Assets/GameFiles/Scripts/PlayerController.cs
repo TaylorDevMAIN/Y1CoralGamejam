@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         walkspeed = defaultspeed;
     }
     
-    if (Input.GetMouseButton(1))
+    if (Input.GetMouseButton(1) && isTouchingWater == false)
     {
         float mouseX = Input.GetAxis("Mouse X");
         this.transform.Rotate(Vector3.up * mouseX);
