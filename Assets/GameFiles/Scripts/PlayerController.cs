@@ -20,21 +20,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-    if (Input.GetMouseButton(1))
-    {
-        float mouseX = Input.GetAxis("Mouse X");
-        this.transform.Rotate(Vector3.up * mouseX);
-    }
-
     Vector3 movement = new Vector3 (Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
     movement = transform.rotation * movement * Time.deltaTime * walkspeed;
     controller.Move(movement);
 
-    if (Input.GetKey(KeyCode.LeftShift) && walkspeed == 10)
+    if (Input.GetKey(KeyCode.LeftShift) && walkspeed == defaultspeed)
     {
         walkspeed = walkspeed * 2;
     } else {
         walkspeed = defaultspeed;
+    }
+    
+    if (Input.GetMouseButton(1) && isTouchingWater == false)
+    {
+        float mouseX = Input.GetAxis("Mouse X");
+        this.transform.Rotate(Vector3.up * mouseX);
     }
     }
 }
